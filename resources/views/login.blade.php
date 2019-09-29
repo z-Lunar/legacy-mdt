@@ -12,19 +12,17 @@
             <!-- The content half -->
             <main class="col d-flex align-items-center">
                 <div class="p-3">
-                    <div>
-                        <h1>Login with your Steam account.</h1>
+                    <h1>Login with your Steam account.</h1>
 
-                        <p>
-                            Authenticate with the CAD using the same Steam profile that you're using to play on Legacy Roleplay. The databases are connected, so
-                            we'll seamlessly be able to grab your information from the server.
-                        </p>
+                    <p>
+                        Authenticate with the CAD using the same Steam profile that you're using to play on Legacy Roleplay. The databases are connected, so
+                        we'll seamlessly be able to grab your information from the server.
+                    </p>
 
-                        <a href="{{ route('login.steam') }}" class="btn btn-primary">
-                            <!--<i class="fab fa-steam-square"></i>-->
-                            Login with steam now
-                        </a>
-                    </div>
+                    <a href="{{ route('login.steam') }}" class="btn btn-primary">
+                        <!--<i class="fab fa-steam-square"></i>-->
+                        Login with steam now
+                    </a>
                 </div>
             </main>
 
