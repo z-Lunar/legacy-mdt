@@ -1,8 +1,5 @@
 <?php
 
-use CloudCreativity\LaravelJsonApi\Facades\JsonApi;
-use CloudCreativity\LaravelJsonApi\Routing\RouteRegistrar;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes

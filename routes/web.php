@@ -3,7 +3,6 @@
 use App\Http\Controllers\Auth\SteamController;
 use Illuminate\Support\Facades\Route;
 use kanalumaddela\LaravelSteamLogin\Facades\SteamLogin;
-use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,10 +24,10 @@ Route::prefix('auth')->group(function () {
 });
 
 // Logging in.
-Route::get('/login', 'Auth\LoginController')->name('login');
+Route::name('login')->get('/login', 'Auth\LoginController');
 
 // Logging out.
-Route::post('/logout', 'Auth\LogoutController')->name('logout');
+Route::name('logout')->post('/logout', 'Auth\LogoutController');
 
 // Group all of the routes that require authentication together.
 Route::middleware('auth')->group(function () {
